@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="586dp"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-90dp"
+        android:text="Resgister"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/regimage"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        app:srcCompat="@drawable/user1" />
+
+    <EditText
+        android:id="@+id/regname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regusername"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/idcard"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/regusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regpassword"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:hint="username"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/regpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regidcard"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/regtel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:drawableLeft="@drawable/tel"
+        android:drawablePadding="10dp"
+        android:hint="tel"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/regaddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regtel"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/home"
+        android:drawablePadding="10dp"
+        android:hint="address"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/regidcard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regaddress"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/idcard"
+        android:drawablePadding="10dp"
+        android:hint="idcard"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:text="TypeMember : " />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnback"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="Member" />
+
+        <RadioButton
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Photographer" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/radius2"
+        android:hint="Register"
+        android:textColorHint="#ffffff"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>
